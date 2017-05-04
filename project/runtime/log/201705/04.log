@@ -1,0 +1,222 @@
+[ 2017-05-04T09:21:06+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.573187s][吞吐率：1.74req/s] [内存消耗：1,244.19kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'bdshare_firstime=1492675512512',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T09:28:10+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.755437s][吞吐率：1.32req/s] [内存消耗：1,927.08kb] [文件加载：42]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'bdshare_firstime=1492675512512',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092109s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.100381s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.005679s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T09:28:12+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show1.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show1.html [运行时间：0.251069s][吞吐率：3.98req/s] [内存消耗：1,255.22kb] [文件加载：35]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'bdshare_firstime=1492675512512; PHPSESSID=rj2r1v8ddrkrmlcv20qs93vbb3',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Show->show1[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index1.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T09:28:13+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/index/index.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/index/index.html [运行时间：0.346850s][吞吐率：2.88req/s] [内存消耗：1,979.80kb] [文件加载：42]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'bdshare_firstime=1492675512512; PHPSESSID=rj2r1v8ddrkrmlcv20qs93vbb3',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\index\index.html [ array (
+  0 => 'imgs',
+  1 => 'list',
+  2 => 'page',
+  3 => 'sum',
+  4 => 'text',
+  5 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004615s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.047145s ]
+[ sql ] [ SQL ] SELECT `t_id`,`dish`,`p_id`,`price` FROM `type` WHERE  (  p_id=0 ) [ RunTime:0.003158s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003719s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `restaurant` [ RunTime:0.017385s ]
+[ sql ] [ SQL ] SELECT `r_id`,`r_img`,`address`,`account` FROM `restaurant` WHERE  (  state=1 ) [ RunTime:0.002511s ]
+[ sql ] [ SQL ] select r_id from user_order GROUP BY r_id ORDER BY COUNT(r_id) desc limit 5 [ RunTime:0.005059s ]
+[ sql ] [ SQL ] select r_id,r_img from restaurant WHERE r_id IN(1,3,4,11,23) [ RunTime:0.024649s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T09:28:18+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/index/index.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/index/index.html [运行时间：0.219280s][吞吐率：4.56req/s] [内存消耗：1,893.72kb] [文件加载：40]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'bdshare_firstime=1492675512512; PHPSESSID=rj2r1v8ddrkrmlcv20qs93vbb3',
+  'content-length' => '3',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/index/index.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'k' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012890s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.021167s ]
+[ sql ] [ SQL ] SELECT `t_id`,`dish`,`p_id`,`price` FROM `type` WHERE  (  p_id=0 ) [ RunTime:0.002869s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004592s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `restaurant` [ RunTime:0.020415s ]
+[ sql ] [ SQL ] SELECT `r_id`,`r_img`,`address`,`account` FROM `restaurant` WHERE  (  state=1 ) [ RunTime:0.005903s ]
+[ sql ] [ SQL ] select r_id from user_order GROUP BY r_id ORDER BY COUNT(r_id) desc limit 5 [ RunTime:0.004385s ]
+[ sql ] [ SQL ] select r_id,r_img from restaurant WHERE r_id IN(1,3,4,11,23) [ RunTime:0.004804s ]
+
+---------------------------------------------------------------

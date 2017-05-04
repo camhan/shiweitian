@@ -1,0 +1,1041 @@
+[ 2017-04-18T16:15:37+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.123694s][吞吐率：8.08req/s] [内存消耗：1,000.27kb] [文件加载：31]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:16:20+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.100409s][吞吐率：9.96req/s] [内存消耗：1,378.58kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:16:25+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.174915s][吞吐率：5.72req/s] [内存消耗：1,898.52kb] [文件加载：43]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007120s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.017163s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.001916s ]
+[ error ] [8]Array to string conversion[B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php:18]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:22+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.067214s][吞吐率：14.88req/s] [内存消耗：1,240.13kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:24+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.089035s][吞吐率：11.23req/s] [内存消耗：1,240.23kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:26+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.183400s][吞吐率：5.45req/s] [内存消耗：1,898.52kb] [文件加载：43]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006420s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.024079s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.005806s ]
+[ error ] [8]Array to string conversion[B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php:18]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:44+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.055699s][吞吐率：17.95req/s] [内存消耗：1,239.79kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:46+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.200285s][吞吐率：4.99req/s] [内存消耗：2,055.15kb] [文件加载：44]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006107s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022737s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.004278s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:17:48+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.123645s][吞吐率：8.09req/s] [内存消耗：1,365.29kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:18:08+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/user/save.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/user/save.html [运行时间：0.171537s][吞吐率：5.83req/s] [内存消耗：2,050.45kb] [文件加载：43]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\User->save[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\user\save.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004479s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.024117s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `u_id` = 26 [ RunTime:0.004805s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:18:10+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.081496s][吞吐率：12.27req/s] [内存消耗：1,228.91kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:18:57+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.109222s][吞吐率：9.16req/s] [内存消耗：1,365.63kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:18:58+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/restaurant/save.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/restaurant/save.html [运行时间：0.160384s][吞吐率：6.24req/s] [内存消耗：2,061.51kb] [文件加载：43]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'restaurant',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Restaurant->save[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Restaurant.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\restaurant\save.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004886s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `restaurant` [ RunTime:0.024538s ]
+[ sql ] [ SQL ] SELECT * FROM `restaurant` WHERE  `r_id` = 3 [ RunTime:0.003352s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:19:00+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.060883s][吞吐率：16.42req/s] [内存消耗：1,228.90kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:19:03+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/user/save.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/user/save.html [运行时间：0.143356s][吞吐率：6.98req/s] [内存消耗：1,907.74kb] [文件加载：41]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'user',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\User->save[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\user\save.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007181s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.023695s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `u_id` = 26 [ RunTime:0.005509s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:19:05+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.064974s][吞吐率：15.39req/s] [内存消耗：1,228.90kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:19:08+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/service/index.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/service/index.html [运行时间：0.116488s][吞吐率：8.58req/s] [内存消耗：1,375.02kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Service->index[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Service.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\service\qq.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:19:23+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.079771s][吞吐率：12.54req/s] [内存消耗：1,228.90kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:22:01+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.125217s][吞吐率：7.99req/s] [内存消耗：1,365.50kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:22:19+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.121392s][吞吐率：8.24req/s] [内存消耗：1,364.98kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:30+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/admin/restaurant/index
+[ log ] localhost/php10/shiweitian/project/public/index.php/admin/restaurant/index [运行时间：0.120596s][吞吐率：8.29req/s] [内存消耗：1,395.23kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'restaurant',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Restaurant->index[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\admin\controller\Restaurant.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/admin\view\restaurant\index.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:30+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/admin/restaurant/main.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/admin/restaurant/main.html [运行时间：0.069380s][吞吐率：14.41req/s] [内存消耗：1,328.18kb] [文件加载：35]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'restaurant',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/admin/restaurant/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Restaurant->main[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\admin\controller\Restaurant.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/admin\view\restaurant\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:34+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show [运行时间：0.108639s][吞吐率：9.20req/s] [内存消耗：1,364.52kb] [文件加载：36]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:37+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.087892s][吞吐率：11.38req/s] [内存消耗：1,240.13kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:41+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.149647s][吞吐率：6.68req/s] [内存消耗：1,898.52kb] [文件加载：43]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009003s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.025945s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.003473s ]
+[ error ] [8]Array to string conversion[B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php:18]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:52+08:00 ] ::1 ::1 POST /php10/shiweitian/project/public/index.php/home/login/login
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/login/login [运行时间：0.122707s][吞吐率：8.15req/s] [内存消耗：1,920.14kb] [文件加载：42]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '20',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => '1',
+  'password' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004358s ] mysql:dbname=food;host=192.168.1.219;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.020104s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `account` = '1' LIMIT 1 [ RunTime:0.008072s ]
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:54+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.050434s][吞吐率：19.83req/s] [内存消耗：1,228.95kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:55+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/index/index.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/index/index.html [运行时间：0.135705s][吞吐率：7.37req/s] [内存消耗：1,317.27kb] [文件加载：35]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/show/show.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Index.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-18T16:24:57+08:00 ] ::1 ::1 GET /php10/shiweitian/project/public/index.php/home/show/show.html
+[ log ] localhost/php10/shiweitian/project/public/index.php/home/show/show.html [运行时间：0.053036s][吞吐率：18.86req/s] [内存消耗：1,228.95kb] [文件加载：34]
+[ info ] [ LANG ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'show',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=2458868736; cna=aMzsECt+sVcCAd3dkG+gC3Jr; _umdata=A502B1276E6D5FEF2A0AB32FDA3C4D051FE639CA0E20B938A184F39134B028AAB4614D0C2713E474CD43AD3E795C914C7B18C53B866C224241FBBECB1FBDE20B; l=AkxMQ5fILeUzrLMdAb7QiFokHKB-wPAv; isg=AkpKIT0WJmrgKqrH_O6n1AIBmjNxLM6VR8EVetSDsx0oh-pBvMsepZC34Uil; bdshare_firstime=1492227259249; PHPSESSID=93qakkqkqr54kjim4fbtns9t62',
+  'referer' => 'http://localhost/php10/shiweitian/project/public/index.php/home/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Show->show[ B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\application\home\controller\Show.php ]
+[ info ] [ VIEW ] B:\Cam1\wamp\phpStudy\WWW\php10\shiweitian\project\public/../application/home\view\show\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
