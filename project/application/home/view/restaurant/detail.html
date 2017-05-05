@@ -1,0 +1,191 @@
+<!DOCTYPE html >
+<head>
+<title>食为天.饭店详情</title>
+<base href="__PUBLIC__/home/shop/">
+<meta name="keywords" content="省心购幼教品"/>
+<meta name="description" content="省心购幼教品"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<style>
+   .swiper-container{ padding:1.8em 0 3em 0;}
+   .swiper-container .pagination{ bottom:0.8em;}
+   .crumbs{height: 3em;line-height: 3em;width: 100%;padding-left: 1em;font-family: microsoft yahei;font-size: 1.5em;color: #696666;}
+	.crumbs a{color:#65BAF1;} 
+</style>
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">
+<!--------------------顶部---------------------->
+   <div class="apply-nav overflow mg-auto area">
+      <div class="overflow clearfix apply-top border-bom">
+        <a href="{:url('show/show1')}" class="apply-return">返回</a>
+        <h2>饭店详情</h2>
+        <a href="#" class="apply-sou" id="apply-sou">搜索</a>
+      </div>    
+   </div>
+
+   <div class="crumbs">
+   	<a href="{:url('show/show1')}">首页</a> > <a href="{:url('index/index')}">饭店列表</a> >{$list.account}
+   </div>
+
+   <img src="{$list.r_img}" alt="">
+
+<div class="hot-detail clearfix overflow">
+  <h2>饭店介绍:</h2>
+  <div class="clearfix hot-detail-wrap" id="hot-detail">
+  	 <p>{$list.r_intrduction}</p>
+      <b class='detail-more'>查看更多</b>
+   </div>
+</div>
+<script type="text/javascript">
+window.onload = function(){   
+  var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+		paginationClickable: true,
+		freeMode: false,
+		freeModeFluid: true
+  }); 
+  //内容提要 点击加载更多
+  var more = true;
+  $(".detail-more").click(function(){
+	  if(more == true){
+	  	  $('#short').css('display','none');
+	  	  $('#all').css('display','block');
+		  $(this).addClass("detail-more2");
+		  more = false; 
+	  }
+	  else{		
+		  $(this).removeClass("detail-more2");
+		  $('#short').css('display','block');
+	  	  $('#all').css('display','none');
+		  more = true; 
+	  }
+  });  
+}; 	
+</script>
+
+<div class="title2 clearfix area mg-auto" >
+  <h2>菜谱</h2>
+</div>
+
+<div class="hot-icon mg-auto overflow area clearfix">
+   <ul class="clearfix" id="smore">
+       {if condition="$list.dish eq 1"}
+       <li style="width: 25%;">
+           <a class="i-icon-tao"><span>该饭店暂时无服务</span></a>
+       </li>
+       {else/}
+           {foreach name='list.dish' item='val'}
+           <li style="width: 25%;">
+               <a class="i-icon-tao"><input type="checkbox" value="{$val.t_id}" price="{$val.price}" class="tid" style="float: left;margin-top:5px; ">{$val.dish}</a>
+           </li>
+            {/foreach}
+       {/if}
+	</ul>
+    <button style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666;font-size: 20px;" id="ok">订餐</button>
+</div>
+<div class="title2 clearfix area mg-auto" >
+  <h2 style="float:left">留言区</h2>
+  <h4 style="float:right;margin-top:30px;" id='show'>查看留言</h4>
+</div> 
+<div class="hot-icon mg-auto overflow area clearfix">
+  <div id="com" style="display:none">
+  
+    {foreach name='comment' item='com'}
+       <li style="clear:both"><h4 style="float:left;margin-left:30px">{$com.account}:</h4>{$com.c_content}</li>
+       {/foreach}
+
+    <!-- <h4 style="margin-left:30px">加载更多</h4> -->
+  </div>
+   <ul class="clearfix" id="smore">
+       <textarea name="" id="comment" cols="70" rows="3" style="margin-left:30px;background-color:#F8F8F8"></textarea>
+  </ul>
+  <h4 style="margin-left:30px" id='message'>留言</h4>
+</div>
+   <!--底部-->
+  <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+  <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">食为天</div>
+    
+</div>
+
+
+
+<input type="hidden" id="rest" value="{$list.r_id}">
+
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> 
+<script type="text/javascript" src="js/swiper-2.1.min.js"></script>
+<input type="hidden" id="url" value="{:url('show/u_order')}">
+</html>
+<script>
+    $(function(){
+      $("#message").click(function(){
+        var str = $("#comment").val();
+        var rid = $("#rest").val();
+        $.ajax({
+           type: "POST",
+           url: "__URL__/message",
+           data: {str:str,rid:rid},
+           dataType: 'json',
+           success: function(msg){
+            msg = eval(msg);
+              if(msg == 1000){
+                alert('请先登录');
+              }else if(msg == 1024){
+                alert('留言成功');
+              }else{
+                alert('出现异常错误，请稍后重试');
+              }
+            }
+           });
+      });
+      //显示隐藏留言
+      $("#show").click(function(){
+          var com = $("#show").html();
+          if(com == '查看留言'){
+            $("#show").html('关闭留言');
+          }else{
+            $("#show").html('查看留言');
+          }
+          $("#com").toggle();
+      });
+      //点餐模块
+        $("#ok").click(function(){
+            var str="";
+            var price="";
+            var url = $("#url").val();
+              // alert(url);return;
+            $(".tid:checked").each(function(k,v){
+                str+=$(v).val()+',';//菜品的id
+                price+=$(v).attr('price')+',';//菜品的价格
+            });
+            var rid = $("#rest").val();
+            if(str == ''){
+                alert('请先点餐');
+            }else{
+                $.post(
+                    "__URL__/order", { str: str,price:price,rid:rid},
+                    function(data){
+                        if(data == 1){
+                            alert('订餐成功,请到个人订单页支付...');
+ location.href='http://139.199.100.59/cam/project/public/index.php/home/show/u_order';
+                          // window.location.reload();
+                        }else if(data == 2){
+                            alert('请先登录');
+                        }else{
+                            alert('订餐失败，出现未知错误');
+                        }
+                    })
+            }
+
+        })
+    })
+</script>

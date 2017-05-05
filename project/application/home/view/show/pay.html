@@ -1,0 +1,106 @@
+<!DOCTYPE html >
+<head>
+  <base href="__PUBLIC__/home/shop/">
+<title>食为天--个人订单</title>
+<meta name="keywords" content="HTML5"/>
+<meta name="description" content="HTML5"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="{:url('show/show')}" class="apply-return">返回</a>
+            <h2>食为天</h2>
+            <a href="search/default.htm" class="apply-sou" style="visibility:hidden">搜索</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+            <ul class="clearfix">
+                    <li><a href="pro-list.html" class="i-icon-tao"><img src="img/app_01.png"></a></li>
+                    <li><a href="pro-list.html" class="i-icon-game"><img src="img/app_02.png"></a></li>
+                    <li><a href="other-list.html" class="i-icon-bizhi"><img src="img/app_03.png"></a></li>
+                    <li><a href="news.html" class="i-icon-zhuan"><img src="img/app_04.png"></a></li>
+		     </ul>
+        </div>     
+   </div>
+   <style>
+	.crumbs{height: 3em;line-height: 3em;width: 100%;padding-left: 1em;font-family: microsoft yahei;font-size: 1.5em;color: #696666;}
+	.crumbs a{color:#65BAF1;}
+   </style>
+   <div class="crumbs">
+   	<a href="{:url('show/show')}">首页</a> ><a href="{:url('show/u_order')}">个人订单列表</a> >支付
+   </div>
+   <div class="special overflow clearfix area mg-auto">
+  <div class="special-img area clearfix">
+   
+  </div>
+  <div class="special-detail clearfix">
+  
+
+
+
+
+      <div class="clearfix detail-wrap" style="border:1px solid pink">          
+        <p class="clearfix"><br>
+       <img src="images/pay.png" alt="">
+<button class="zhifu" ids="{$ids}" style="margin-left:200px;">支付完成</button><br>
+ 
+                        
+ </div>
+
+<div class="shadow_wrap"></div>
+    
+        </p>    
+    </div>
+  
+
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/com.js"></script> 
+
+
+  
+   <!--底部-->
+  <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+  <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">
+  食为天--Eating For Life!</div> 
+  
+</div>
+
+</body> 
+
+
+</html>
+<script>
+     //1已支付;
+    $(document).on('click','.zhifu',function(){       
+         var id=$(this).attr('ids');
+                                     // alert(id);return;
+      // 支付完成后;
+            $.ajax({
+               type: "POST",
+               url: "__URL__/uorder_up",
+               data: {status:1,id:id},
+               success: function(msg){
+                  if (msg==1){
+                    alert('已完成支付,请耐心等待处理！');
+                    window.location.href="{:url('u_order')}";
+                  }else{
+                    alert('支付出错！');
+                  }
+                }
+            });
+    })
+</script>

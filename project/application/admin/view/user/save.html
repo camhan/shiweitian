@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <title>后台欢迎页</title> -->
+	<base href="__PUBLIC__/admin/">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">修改页面</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>修改网站用户</h3>
+			</div>
+			<div class="public-content-cont two-col">
+			<form action="{:url('User/savedo')}?id=<?php echo $info[0]['u_id'];?>" method="post">
+				<table class="public-cont-table">
+					<tr>
+						<th style="width:10%">用户ID</th>
+						<th style="width:10%">用户名</th>
+						<th style="width:10%">电话</th>
+						<th style="width:10%">邮箱</th>
+						<th style="width:10%">添加时间</th>
+						<th style="width:10%">修改</th>
+					</tr>
+					<?php foreach($info as $k=>$v):?>
+					<tr>
+						<td><?php echo $v['u_id']?></td>
+						<td><input type="" name='account' value="<?php echo $v['account']?>"></td>						
+						<td><input type="" name='tel' value="<?php echo $v['tel']?>"></td>
+						<td><input type="" name='email' value="<?php echo $v['email']?>"></td>
+						<td><?php echo $v['add_time']?></td>
+						<td><input type="submit" value="保存修改"></td>
+					</tr>
+				<?php endforeach; ?>
+				</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

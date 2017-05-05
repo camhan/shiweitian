@@ -1,0 +1,119 @@
+<!DOCTYPE html >
+<head>
+    <title>食为天</title>
+    <base href="__PUBLIC__/home/shop/">
+    <meta name="keywords" content="食为天"/>
+    <meta name="description" content="食为天"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/apply.css">
+    <link rel="stylesheet" type="text/css" href="css/share.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <style>
+        .swiper-container{ padding:1.8em 0 3em 0;}
+        .swiper-container .pagination{ bottom:0.8em;}
+        .crumbs{height: 3em;line-height: 3em;width: 100%;padding-left: 1em;font-family: microsoft yahei;font-size: 1.5em;color: #696666;}
+        .crumbs a{color:#65BAF1;}
+        .big{
+            clear: both;
+        }
+        .small{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">
+    <!--------------------顶部---------------------->
+    <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="{:url('show/show2')}" class="apply-return">返回</a>
+            <h2>食为天</h2>
+            <a href="#" class="apply-sou" id="apply-sou">搜索</a>
+        </div>
+    </div>
+
+    <div class="crumbs">
+        <a href="{:url('show/show2')}">首页</a> > 
+        <a href="{:url('restaurant/choice')}">饭店列表</a> 
+    </div>
+
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                paginationClickable: true,
+                freeMode: false,
+                freeModeFluid: true
+            });
+            //内容提要 点击加载更多
+            var more = true;
+            $(".detail-more").click(function(){
+                if(more == true){
+                    $('#short').css('display','none');
+                    $('#all').css('display','block');
+                    $(this).addClass("detail-more2");
+                    more = false;
+                }
+                else{
+                    $(this).removeClass("detail-more2");
+                    $('#short').css('display','block');
+                    $('#all').css('display','none');
+                    more = true;
+                }
+            });
+        };
+    </script>
+
+    <div class="title2 clearfix area mg-auto" >
+        <h2>菜单</h2>
+    </div>
+
+    <div class="hot-icon mg-auto overflow area clearfix">
+        <form action="{:url('restaurant/adddo')}" method="post"><table>
+            <ul class="clearfix" id="smore">
+
+                <?php foreach($arr as $k=>$v): ?>
+
+                <li class="big"><a href="#" class="i-icon-tao"><img src="images/{$v.t_img}" title=" " alt=" "><span><strong style="color: red;">{$v.dish}</strong></span></a></li><?php echo '<br/>';?>
+                <?php foreach($v['son'] as $k=>$val): ?>
+
+                <ul>
+                    <li class="small"><img src="images/{$val.t_img}" title=" " alt=" "><span>{$val.dish}<b style="color:deeppink;">{$val.price}</b>元</span><b style="color: red;">选择：</b>
+                        <input type='checkbox' name='check[]' value='{$val.t_id}' <?php
+                    for($i=0;$i<count($info);$i++){
+                  if($val['t_id']==$info[$i]){
+                        echo "checked='checked'";
+                        }else{
+                        echo "";
+                        }
+                        }?> class='check'/>
+                      </li>
+                </ul>
+
+                <?php endforeach; ?>
+                <?php endforeach; ?>
+
+            </ul>
+        </form>
+        <center><input type="submit" class="buy" style="cursor: pointer;border: 1px solid blue;" value="立即添加" ></table></center>
+    </div>
+
+
+    <!--底部-->
+    <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+    <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">食为天手机版</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/com.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-2.1.min.js"></script>
+
+</html>

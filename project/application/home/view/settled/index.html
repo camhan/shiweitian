@@ -1,0 +1,100 @@
+<!DOCTYPE html >
+<head>
+    <title>食为天酒店列表</title>
+    <base href="__PUBLIC__/home/shop/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/apply.css">
+    <link rel="stylesheet" type="text/css" href="css/share.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">
+    <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="{:url('show/show2')}" class="apply-return">返回</a>
+            <h2>食为天</h2>
+            <a href="#" class="apply-sou" style="visibility:hidden">搜索</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+            <ul class="clearfix">
+                <li><a href="pro-list.html" class="i-icon-tao"><img src="img/app_01.png"></a></li>
+                <li><a href="pro-list.html" class="i-icon-game"><img src="img/app_02.png"></a></li>
+                <li><a href="other-list.html" class="i-icon-bizhi"><img src="img/app_03.png"></a></li>
+                <li><a href="news.html" class="i-icon-zhuan"><img src="img/app_04.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--产品列表-->
+    <div class="i-tab mg-auto overflow area clearfix">
+        <div class="i-tab-title">
+            <h2>饭店入驻</h2>
+        </div>
+        <div class="tab-content clearfix overflow" id="con1">
+            <div class="public-content-cont" style=" margin-left:100px;">
+                <form action="{:url('settled/add')}" method="post">
+                    <span style="color: red;"><?php echo $end; ?></span>(按年数买更优惠)
+                    <div class="form-group" style="width: 100px;height: 60px">
+                        <label for="">购买月数</label>
+                        <select id="month" name="month">
+                            <option value="">--请选择--</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="display:none;width: 100px;height: 60px">
+                        <label for="">金钱</label>
+                        <br/><span class="money" style="color: red;"></span>
+                    </div>
+                    <div style="margin-left:150px; width: 100px;height: 60px">
+                        <input type="submit" class="sub-btn" value="提  交" />
+                        <input type="reset" class="sub-btn" value="重  置" />
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--产品列表结束-->
+    <!--底部-->
+    <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+    <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">食为天</div>
+
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $('#month').change(function () {
+//        alert( $('#month').val());
+        var month=$('#month').val();
+       if(month==6){
+           $('.money').text(600+'元');
+           $('.form-group').show();
+       }
+        if(month==12){
+            $('.money').text(1000+'元');
+            $('.form-group').show();
+        }
+        if(month==24){
+            $('.money').text(2000+'元');
+            $('.form-group').show();
+        }
+        if(month==36){
+            $('.money').text(3000+'元');
+            $('.form-group').show();
+        }
+
+    })
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台欢迎页</title>
+	<base href="__PUBLIC__/admin/">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">订单展示</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3 style="display: inline-block;"></h3>
+				<div class="public-content-right fr">
+					<a href="" style="height: 24px; width: 60px;border: 1px solid #ccc;font-size: 12px;text-align:center">添加信息</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="public-content-cont two-col" style=" margin-left:100px;">
+				
+				<table class="public-cont-table col-2" width="100%">
+					<tr>
+						<th style="width:5%">ID</th>
+						<th style="width:15%">用户名称</th>
+						<th style="width:10%">订单号</th>
+						<th style="width:10%">饭店名称</th>
+						<th style="width:10%">菜品</th>
+						<th style="width:10%">金额</th>				
+						<th style="width:10%">状态</th>			
+						<th style="width:15%">操作</th>
+					</tr>
+					{foreach name='data' item='v'}
+					<tr>
+						<td>{$v.uo_id}</td>						
+						<td>{$v.account}</td>
+						<td><span style="color:#999">{$v.user_sn}</span></td>
+						<td><span >{$v.username}</span></td>
+						<td>
+							{foreach name='v.dish' item='val'}
+								{$val.dish}、
+							{/foreach}
+						</td>
+						<td>{$v.money}</td>
+						<td>{$v.status}</td>
+						<td>
+							<div class="table-fun">
+								<a href="">修改</a>
+								<a href="">删除</a>
+							</div>
+						</td>
+					</tr>
+					{/foreach}
+				</table>
+			</div>
+			<center>
+				<b style="padding-left: 300px;">
+					<?php
+					for($i=1;$i<=$pages;$i++){
+						echo "<a href='__URL__/index?page=$i' style='padding-left: 20px;float: left;'>$i</a>";
+					}
+					?>
+				</b>
+			</center>
+		</div>
+	</div>
+</body>
+</html>
