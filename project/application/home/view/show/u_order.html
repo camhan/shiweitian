@@ -1,0 +1,172 @@
+<!DOCTYPE html >
+<head>
+  <base href="__PUBLIC__/home/shop/">
+<title>食为天--个人订单</title>
+<meta name="keywords" content="HTML5"/>
+<meta name="description" content="HTML5"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto"> 
+   <div class="apply-nav overflow mg-auto area">
+        <div class="overflow clearfix apply-top border-bom">
+            <a href="{:url('show/show1')}" class="apply-return">返回</a>
+            <h2>食为天</h2>
+            <a href="search/default.htm" class="apply-sou" style="visibility:hidden">搜索</a>
+            <a href="#" class="apply-pup">弹出</a>
+        </div>
+        <div class="i-icon mg-auto overflow area clearfix" id="apply-pup-icon">
+            <ul class="clearfix">
+                    <li><a href="pro-list.html" class="i-icon-tao"><img src="img/app_01.png"></a></li>
+                    <li><a href="pro-list.html" class="i-icon-game"><img src="img/app_02.png"></a></li>
+                    <li><a href="other-list.html" class="i-icon-bizhi"><img src="img/app_03.png"></a></li>
+                    <li><a href="news.html" class="i-icon-zhuan"><img src="img/app_04.png"></a></li>
+		     </ul>
+        </div>     
+   </div>
+   <style>
+	.crumbs{height: 3em;line-height: 3em;width: 100%;padding-left: 1em;font-family: microsoft yahei;font-size: 1.5em;color: #696666;}
+	.crumbs a{color:#65BAF1;}
+   </style>
+   <div class="crumbs">
+   	<a href="{:url('show/show1')}">首页</a> ><a href="{:url('show/u_order')}">个人订单列表</a>
+   </div>
+   <div class="special overflow clearfix area mg-auto">
+  <div class="special-img area clearfix">
+   
+  </div>
+  <div class="special-detail clearfix">
+  
+
+
+
+
+      <div class="clearfix detail-wrap" style="border:1px solid pink">          
+        <p class="clearfix"><br>
+       
+  <div class="clear">
+
+        <table border="" >
+
+          <tr>
+            <td align="center"> 序 号</td>
+            <td align="center"> 点 餐 者</td>
+            <td align="center"> 订 单 号</td>
+            <td align="center">订 餐 时 间</td>
+            <td align="center">  饭 店</td>
+            <td align="center"> 菜 品</td>
+            <td align="center"> 金 额(¥)</td>
+            <td align="center">状 态</td>
+
+          </tr>
+
+         <?php foreach ($data as $k=>$v): ?>
+          <tr>
+              <td align="center">{$v.uo_id}</td>
+              <td align="center">{$v.account}</td>  
+              <td align="center">{$v.user_sn}</td>
+               <td align="center">
+               {$v.uo_time|date='Y-m-d H:i:s',###}
+               </td> 
+              <td align="center">{$v.username}</td> 
+
+              <td align="center">
+              {foreach name='v.dish' item='val'}
+                {$val.dish}、
+              {/foreach}
+              </td>  
+
+              <td align="center">{$v.money}</td>
+              <td align="center" ids="{$v.uo_id}">
+
+<!-- 订单状态 -->
+          <?php if ($v['status']==0): ?>
+                <a href="__URL__/pay?ids={$v.uo_id}"><button>去支付</button></a> 
+          <?php elseif ($v['status']==1): ?> 
+                 未处理
+          <?php elseif ($v['status']==2): ?>
+                 备餐中
+          <?php elseif ($v['status']==3): ?>
+                 派送中..请保持电话畅通
+          <?php elseif ($v['status']==4): ?>
+                 已送达<button class="queren">确认收到</button><br>
+          <?php elseif ($v['status']==5): ?>
+                 已确认收到
+          <?php endif ?>
+
+          </td>   
+          </tr>
+
+         <?php endforeach ?>
+
+        </table>
+          <center>
+              <b>
+                  <?php
+					for($i=1;$i<=$pages;$i++){
+						echo "<a href='__URL__/u_order?page=$i' style='padding-left: 20px;float: left;'>$i</a>";
+                  }
+                  ?>
+              </b>
+          </center>
+
+     </div>
+                        
+ </div>
+
+<div class="shadow_wrap"></div>
+    
+        </p>    
+    </div>
+  
+
+
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/com.js"></script> 
+
+
+  
+   <!--底部-->
+  <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+  <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">食为天--Eating For Life!</div> 
+  
+</div>
+
+</body> 
+
+
+</html>
+<script>
+  //5确认收货;
+    $(document).on('click','.queren',function(){       
+         var id=$(this).parent().attr('ids');
+            $.ajax({
+               type: "POST",
+               url: "__URL__/uorder_up",
+               data: {status:5,id:id},
+               success: function(msg){
+                  if (msg==1){
+                    alert('已确认收货！');
+                    window.location.reload();
+                  }else{
+                    alert('确认收货错误！');
+                  }
+                }
+            });
+    })
+
+
+    })
+</script>

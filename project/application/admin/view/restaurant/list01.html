@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台欢迎页</title>
+	<base href="__PUBLIC__/admin/">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="javascript:void(0)">管理首页</a>><a href="">首页推荐管理</a></div>
+		<div class="public-content">
+			<div class="public-content-header">
+				<h3>审核饭店</h3>
+			</div>
+			<div class="public-content-cont two-col">
+				<div style="float:left; margin-left:80px;">
+					&nbsp;
+				</div>
+				<table class=" public-cont-table">
+					<tr>
+						<th style="width:10%">饭店序号</th>
+						<th style="width:20%">饭店名字</th>
+						<th style="width:10%">饭店密码</th>
+						<th style="width:10%">饭店电话</th>
+						<th style="width:10%">饭店邮箱</th>
+						<th style="width:10%">注册时间</th>
+						<th style="width:10%">饭店状态</th>
+						<th style="width:20%">操作</th>
+					</tr>
+
+<?php foreach ($list as $k=>$v): ?>
+
+					<tr>
+						<td><?php echo $v['r_id']?></td>
+						<td style="color:#6bc095"><?php echo $v['account']?></td>						
+						<td><?php echo $v['password']?></td>
+						<td><span><?php echo $v['tel']?></span></td>
+						<td><span style="color:#999"><?php echo $v['email']?></span></td>
+						<td><span style="color:#999"><?php echo $v['add_time']?></span></td>
+						<td>	
+						<?php if ($v['state']==1): ?>
+							<span style="color:#6bc095">已通过审核</span>
+						<?php else: ?>
+							<span style="color:pink">未审核</span>
+							<span style="color:blue">
+		<a href="javascript:void(0)" class="check2" ids="<?php echo $v['r_id']?>">通过审核</a></span>
+						<?php endif ?>
+						</td>
+						<td>
+							<div class="table-fun">
+								<a href="{:url('update')}?id=<?php echo $v['r_id']?>">修改</a>
+								<a href="{:url('del')}?id=<?php echo $v['r_id']?>">删除</a>
+							</div>
+						</td>
+					</tr>
+
+<?php endforeach ?>
+
+				</table>
+			</div>
+			<center>
+				<b style="padding-left: 300px;">
+					<?php
+					for($i=1;$i<=$pages;$i++){
+						echo "<a href='__URL__/list01?page=$i&state=$state' style='padding-left: 20px;float: left;'>$i</a>";
+					}
+					?>
+				</b>
+			</center>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script>
+
+	$(function(){
+
+
+//审核方法1；
+		$('.check2').click(function(){
+			var id=$(this).attr('ids');	
+												// alert(id);return;
+			window.location.href="{:url('check')}?id="+id;
+		});
+
+//审核方法2;ajax无刷新;
+		
+
+
+	});
+
+
+
+</script>

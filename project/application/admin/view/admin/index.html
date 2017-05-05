@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台欢迎页</title>
+    <base href="__PUBLIC__/admin/">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+<div class="container">
+    <div class="public-nav">您当前的位置：<a href="">管理员列表</a></div>
+    <div class="public-content">
+        <div class="public-content-header">
+            <h3>管理员列表</h3>
+        </div>
+        <div class="public-content-cont">
+            <table class="public-cont-table">
+                <tr>
+                    <th style="width:10%">ID</th>
+                    <th style="width:10%">管理员名称</th>
+                    <th style="width:30%">操作</th>
+                </tr>
+                <?php foreach($data as $k=>$v):?>
+                <tr>
+                    <td><?php echo $v['a_id']?></td>
+                    <td><?php echo $v['user']?></td>
+                    <td>
+                        <div class="table-fun">
+                            <a href="{:url('admin/upd')}?id=<?php echo $v['a_id']?>">修改</a>
+                            <a href="{:url('admin/del')}?id=<?php echo $v['a_id']?>"  class="del">删除</a>
+                        </div>
+                    </td>
+                </tr>
+             <?php endforeach ;?>
+            </table>
+        </div>
+        <center>
+            <b style="padding-left: 300px;">
+                <?php
+					for($i=1;$i<=$pages;$i++){
+						echo "<a href='__URL__/index?page=$i' style='padding-left: 20px;float: left;'>$i</a>";
+                }
+                ?>
+            </b>
+        </center>
+    </div>
+</div>
+</body>
+</html>
+<!--<script src="js/jquery-2.1.1.min.js"></script>-->
+<!--<script>-->
+    <!--$(".del").click(function(){-->
+        <!--var a_id=$(this).attr('id');-->
+        <!--alert(a_id);-->
+    <!--})-->
+<!--</script>-->

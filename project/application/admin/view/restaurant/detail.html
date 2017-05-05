@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台欢迎页</title>
+	<base href="__PUBLIC__/admin/">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href=""></a></div>
+		<div class="public-content">
+			<div class="clearfix"></div>
+			<div class="public-content-cont two-col" style=" margin-left:100px;">
+				
+				<table class="public-cont-table col-2" width="100%">
+					<tr>
+						<th>编号</th>
+						<td><?=$arr['r_id']?></td>
+					</tr>
+					<tr>
+						<th>饭店名称</th>
+						<td><?=$arr['account']?></td>
+					</tr>
+					<tr>
+						<th>菜谱</th>
+						<td>
+							<?php foreach($arr['dish'] as $k=>$v){
+								echo $v['dish'].'&nbsp;';
+							}?>
+						</td>
+					</tr>
+					<tr>
+						<th>入住时间</th>
+						<td><?=$arr['add_time']?></td>
+					</tr>
+					<tr>
+						<th>饭店状态</th>
+						<td>
+							{if condition="$arr['state'] eq 1"}
+							<span style='color:#6bc095'>已审核</span>
+							{else /}
+							<span style='color:red'>未审核</span>
+							{/if}
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

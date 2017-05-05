@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <title>后台欢迎页</title> -->
+	<base href="__PUBLIC__/admin/">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/content.css" />
+</head>
+<body marginwidth="0" marginheight="0" class="all">
+<div class="container">
+	<div class="public-nav">您当前的位置：<a href="">管理首页</a>><a href="">用户展示页面</a></div>
+	<span class="public-content">
+		<div class="public-content-header">
+			<h3>展示网站用户</h3>
+		</div>
+		<a class="public-content-cont two-col">
+			<input type='text' class='text' placeholder='请输入用户名' style='width:200px';/>
+			<button class="search">查询</button>
+			<table class="public-cont-table">
+				<tr>
+					<th style="width:10%">用户ID</th>
+					<th style="width:10%">用户名</th>
+					<th style="width:10%">电话</th>
+					<th style="width:10%">邮箱</th>
+					<th style="width:10%">添加时间</th>
+					<th style="width:10%">操作</th>
+				</tr>
+				<?php foreach($data as $k=>$v):?>
+				<tr>
+					<td><?php echo $v['u_id']?></td>
+					<td><?php echo $v['account']?></td>
+					<td><?php echo $v['tel']?></td>
+					<td><?php echo $v['email']?></td>
+					<td><?php echo $v['add_time']?></td>
+					<td>
+						<div class="table-fun">
+							<a href="{:url('user/save')}?id=<?php echo $v['u_id']?>">修改</a>
+							<a href="{:url('user/del')}?id=<?php echo $v['u_id']?>">删除</a>
+						</div>
+					</td>
+				</tr>
+				<?php endforeach; ?>
+			</table>
+
+	</span>
+	<center>
+		<b style="padding-left: 300px;">
+			<?php
+					for($i=1;$i<=$sum;$i++){
+						echo "<a href='__URL__/user?page=$i&text=".$text."' style='padding-left: 20px;float: left;'>$i</a>";
+			}
+			?>
+		</b>
+	</center>
+	<!--{$data->render()}-->
+</div>
+</div>
+</body>
+</html>
+<script src='js/jquery.min.js'></script>
+<script>
+    $('.search').click(function(){
+        var text=$('.text').val();
+//		alert(text)
+        $.ajax({
+            type: "GET",
+            url: "{:url('User/user')}",
+            data: "text="+text,
+            success: function(msg){
+                $('.all').html(msg);
+//                $('.text').val(text);
+            }
+        });
+    })
+</script>

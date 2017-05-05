@@ -1,0 +1,51 @@
+<div class="public-ifame-leftnav">
+			<div class="public-title-warrp">
+				<div class="public-ifame-title ">
+					<a href="{:url('index')}">首页</a>
+				</div>
+			</div>
+			<ul class="left-nav-list">
+				<li class="public-ifame-item">
+					<a href="javascript:;">饭店管理</a>
+					<div class="ifame-item-sub">
+						<ul>
+							<li><a href="{:url('Restaurant/add')}" target="content">添加饭店</a></li>
+							<li class="active"><a href="{:url('Restaurant/lists')}" target="content">饭店列表</a></li>
+							<li><a href="{:url('Restaurant/list01')}?state=0" target="content">待审核饭店</a></li>
+							<li><a href="{:url('Restaurant/list01')}?state=1" target="content">已审核饭店</a></li>
+							<li><a href="{:url('Restaurant/type')}" target="content">饭店菜谱</a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="public-ifame-item">
+					<a href="javascript:;">管理员管理</a>
+					<div class="ifame-item-sub">
+						<ul>
+						<li><a href="{:url('Admin/add_list')}" target="content">管理员添加</a></li>
+						<li class="active"><a href="{:url('Admin/index')}" target="content">管理员列表</a></li>
+						<li><a href="{:url('Admin/role')}" target="content">角色添加</a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="public-ifame-item">
+					<a href="javascript:;">个人用户管理</a>
+					<div class="ifame-item-sub">
+						<ul>
+							<li class="active"><a href="{:url('User/user')}" target="content">会员列表</a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="public-ifame-item">
+					<a href="javascript:;">订单管理</a>
+					<div class="ifame-item-sub">
+						<ul>
+							<li class="active"><a href="{:url('Rorder/index')}" target="content">饭店订单</a></li>
+							<li ><a href="{:url('Uorder/index')}" target="content">个人订单</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+</div>
